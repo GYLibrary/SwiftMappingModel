@@ -36,6 +36,9 @@
 		B7A6387E1E1B84F700D6D42B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6387B1E1B84F700D6D42B /* Operators.swift */; };
 		B7A6387F1E1B84F700D6D42B /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6387C1E1B84F700D6D42B /* ToJSON.swift */; };
 		B7A638801E1B84F700D6D42B /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6387D1E1B84F700D6D42B /* TransformOperators.swift */; };
+		B7A638821E1B86EF00D6D42B /* book in Resources */ = {isa = PBXBuildFile; fileRef = B7A638811E1B86EF00D6D42B /* book */; };
+		B7A638841E1B870500D6D42B /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A638831E1B870500D6D42B /* BookModel.swift */; };
+		B7A638861E1B870900D6D42B /* BookSubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A638851E1B870900D6D42B /* BookSubModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +94,9 @@
 		B7A6387B1E1B84F700D6D42B /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B7A6387C1E1B84F700D6D42B /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
 		B7A6387D1E1B84F700D6D42B /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
+		B7A638811E1B86EF00D6D42B /* book */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = book; sourceTree = "<group>"; };
+		B7A638831E1B870500D6D42B /* BookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		B7A638851E1B870900D6D42B /* BookSubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSubModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 				B71650201E1B346000DF67D8 /* SwiftJsonMode */,
 				B7164FF21E1B344100DF67D8 /* AppDelegate.swift */,
 				B7164FF41E1B344100DF67D8 /* ViewController.swift */,
+				B7A638831E1B870500D6D42B /* BookModel.swift */,
+				B7A638851E1B870900D6D42B /* BookSubModel.swift */,
 				B7164FF61E1B344100DF67D8 /* Main.storyboard */,
 				B7164FF91E1B344100DF67D8 /* Assets.xcassets */,
 				B7164FFB1E1B344100DF67D8 /* LaunchScreen.storyboard */,
@@ -173,6 +181,7 @@
 		B71650201E1B346000DF67D8 /* SwiftJsonMode */ = {
 			isa = PBXGroup;
 			children = (
+				B7A638811E1B86EF00D6D42B /* book */,
 				B7A6387B1E1B84F700D6D42B /* Operators.swift */,
 				B7A6387C1E1B84F700D6D42B /* ToJSON.swift */,
 				B7A6387D1E1B84F700D6D42B /* TransformOperators.swift */,
@@ -312,6 +321,7 @@
 				B7164FFD1E1B344100DF67D8 /* LaunchScreen.storyboard in Resources */,
 				B7164FFA1E1B344100DF67D8 /* Assets.xcassets in Resources */,
 				B7164FF81E1B344100DF67D8 /* Main.storyboard in Resources */,
+				B7A638821E1B86EF00D6D42B /* book in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,10 +347,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B716502A1E1B42CD00DF67D8 /* DateTransform.swift in Sources */,
+				B7A638861E1B870900D6D42B /* BookSubModel.swift in Sources */,
 				B7A6387F1E1B84F700D6D42B /* ToJSON.swift in Sources */,
 				B71650361E1B4D3600DF67D8 /* ISO8601DateTransform.swift in Sources */,
 				B71650241E1B36A000DF67D8 /* URLTransform.swift in Sources */,
 				B71650321E1B482900DF67D8 /* CustomDateFormatTransform.swift in Sources */,
+				B7A638841E1B870500D6D42B /* BookModel.swift in Sources */,
 				B7164FF51E1B344100DF67D8 /* ViewController.swift in Sources */,
 				B716503A1E1B4F5100DF67D8 /* MapError.swift in Sources */,
 				B71650261E1B3B6B00DF67D8 /* TransformOf.swift in Sources */,
@@ -511,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZZG6NM74T;
 				INFOPLIST_FILE = SwiftJsonModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.SwiftJsonModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZZG6NM74T;
 				INFOPLIST_FILE = SwiftJsonModel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.SwiftJsonModel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
