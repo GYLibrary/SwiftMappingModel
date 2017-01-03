@@ -1,0 +1,2 @@
+# SwiftMappingModel
+SwiftJsonModel
