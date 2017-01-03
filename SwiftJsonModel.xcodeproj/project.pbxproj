@@ -30,6 +30,12 @@
 		B716503C1E1B52CB00DF67D8 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716503B1E1B52CB00DF67D8 /* Mapper.swift */; };
 		B716503E1E1B532700DF67D8 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716503D1E1B532700DF67D8 /* Mappable.swift */; };
 		B71650401E1B546100DF67D8 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716503F1E1B546100DF67D8 /* Map.swift */; };
+		B7A638781E1B84E500D6D42B /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A638751E1B84E500D6D42B /* EnumOperators.swift */; };
+		B7A638791E1B84E500D6D42B /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A638761E1B84E500D6D42B /* FromJSON.swift */; };
+		B7A6387A1E1B84E500D6D42B /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A638771E1B84E500D6D42B /* ImmutableMappable.swift */; };
+		B7A6387E1E1B84F700D6D42B /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6387B1E1B84F700D6D42B /* Operators.swift */; };
+		B7A6387F1E1B84F700D6D42B /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6387C1E1B84F700D6D42B /* ToJSON.swift */; };
+		B7A638801E1B84F700D6D42B /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A6387D1E1B84F700D6D42B /* TransformOperators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,12 @@
 		B716503B1E1B52CB00DF67D8 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		B716503D1E1B532700DF67D8 /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		B716503F1E1B546100DF67D8 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		B7A638751E1B84E500D6D42B /* EnumOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumOperators.swift; sourceTree = "<group>"; };
+		B7A638761E1B84E500D6D42B /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		B7A638771E1B84E500D6D42B /* ImmutableMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImmutableMappable.swift; sourceTree = "<group>"; };
+		B7A6387B1E1B84F700D6D42B /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		B7A6387C1E1B84F700D6D42B /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		B7A6387D1E1B84F700D6D42B /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +173,12 @@
 		B71650201E1B346000DF67D8 /* SwiftJsonMode */ = {
 			isa = PBXGroup;
 			children = (
+				B7A6387B1E1B84F700D6D42B /* Operators.swift */,
+				B7A6387C1E1B84F700D6D42B /* ToJSON.swift */,
+				B7A6387D1E1B84F700D6D42B /* TransformOperators.swift */,
+				B7A638751E1B84E500D6D42B /* EnumOperators.swift */,
+				B7A638761E1B84E500D6D42B /* FromJSON.swift */,
+				B7A638771E1B84E500D6D42B /* ImmutableMappable.swift */,
 				B71650211E1B349B00DF67D8 /* TransformType.swift */,
 				B71650271E1B3DE900DF67D8 /* EnumTransform.swift */,
 				B71650251E1B3B6B00DF67D8 /* TransformOf.swift */,
@@ -319,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B716502A1E1B42CD00DF67D8 /* DateTransform.swift in Sources */,
+				B7A6387F1E1B84F700D6D42B /* ToJSON.swift in Sources */,
 				B71650361E1B4D3600DF67D8 /* ISO8601DateTransform.swift in Sources */,
 				B71650241E1B36A000DF67D8 /* URLTransform.swift in Sources */,
 				B71650321E1B482900DF67D8 /* CustomDateFormatTransform.swift in Sources */,
@@ -327,14 +346,19 @@
 				B71650261E1B3B6B00DF67D8 /* TransformOf.swift in Sources */,
 				B716502C1E1B453900DF67D8 /* DataTransform.swift in Sources */,
 				B716503E1E1B532700DF67D8 /* Mappable.swift in Sources */,
+				B7A6387A1E1B84E500D6D42B /* ImmutableMappable.swift in Sources */,
 				B71650341E1B4A4300DF67D8 /* HexColorTransform.swift in Sources */,
+				B7A638781E1B84E500D6D42B /* EnumOperators.swift in Sources */,
 				B71650381E1B4DB000DF67D8 /* NSDecimalNumberTransform.swift in Sources */,
 				B716502E1E1B468100DF67D8 /* DictionaryTransform.swift in Sources */,
 				B71650281E1B3DE900DF67D8 /* EnumTransform.swift in Sources */,
 				B716503C1E1B52CB00DF67D8 /* Mapper.swift in Sources */,
+				B7A638791E1B84E500D6D42B /* FromJSON.swift in Sources */,
+				B7A6387E1E1B84F700D6D42B /* Operators.swift in Sources */,
 				B71650221E1B349B00DF67D8 /* TransformType.swift in Sources */,
 				B7164FF31E1B344100DF67D8 /* AppDelegate.swift in Sources */,
 				B71650401E1B546100DF67D8 /* Map.swift in Sources */,
+				B7A638801E1B84F700D6D42B /* TransformOperators.swift in Sources */,
 				B71650301E1B470B00DF67D8 /* DateFormatterTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +608,7 @@
 				B71650191E1B344100DF67D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B716501A1E1B344100DF67D8 /* Build configuration list for PBXNativeTarget "SwiftJsonModelTests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +617,7 @@
 				B716501C1E1B344100DF67D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B716501D1E1B344100DF67D8 /* Build configuration list for PBXNativeTarget "SwiftJsonModelUITests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +626,7 @@
 				B716501F1E1B344100DF67D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
